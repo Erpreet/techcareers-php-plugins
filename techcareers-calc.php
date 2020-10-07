@@ -14,6 +14,8 @@
  
  */
 
+ add_shortcode('techcareers-calc', 'techCareersCalculator');
+
  function techCareersCalculator ()
  {
     $result = FALSE;
