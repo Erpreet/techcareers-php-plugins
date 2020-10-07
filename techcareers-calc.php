@@ -42,10 +42,11 @@
       }
      
     }
-  
+    ob_start();
     ?>
     
-  
+   
+   
     
     <form method="POST" action="#">
       <label for="num1">
@@ -90,4 +91,8 @@
         <?php echo $result; ?>
       </p>
     <?php endif; 
+
+    $outputString = ob_get_clean();
+
+    return $outputString;
  }
